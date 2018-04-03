@@ -7,7 +7,9 @@ Any suggestions and pull requests are welcome.
   * [Using Standalone Tensorboard inside the Docker](#using-standalone-tensorboard-inside-the-docker)
   
 ## Using Jupyter Notebook inside the Docker
-  * [Jupyter Notebook Tutorial](http://jupyter.readthedocs.io/en/latest/)
+  * ssh -L 127.0.0.1:8888:127.0.0.1:8888 -X tan@terminator1.ece.rice.edu
+  * nvidia-docker run -p 127.0.0.1:8888:8888 --rm -ti --name tanpytorch --hostname insideDocker -v /home/tan/:/root/ -v /mnt/project2/tanData/:/tanData/ tannguyen1989/efficientcnn:latest /bin/bash
+  * jupyter notebook --ip 0.0.0.0 --allow-root
   
 ## Using standalone Tensorboard inside the Docker
 Add the `-p 0.0.0.0:6006:6006` parameter to the `nvidia-docker run` command. For example, 
