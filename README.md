@@ -17,7 +17,7 @@ nvidia-docker run -p 127.0.0.1:8888:8888 --rm -ti --name tanpytorch --hostname i
 ```
 Inside the docker container, launch jupyter notebook
 ```
-jupyter notebook --ip 0.0.0.0 --allow-root
+jupyter notebook --port 8888 --ip 0.0.0.0 --allow-root
 ```
 Copy the link and paste it into your local internet browser
   
