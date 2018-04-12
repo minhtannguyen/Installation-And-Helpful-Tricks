@@ -5,6 +5,7 @@ Any suggestions and pull requests are welcome.
 # Bookmarks
   * [Using Jupyter Notebook inside the Docker](#using-jupyter-notebook-inside-the-docker)
   * [Using Standalone Tensorboard inside the Docker](#using-standalone-tensorboard-inside-the-docker)
+  * [Useful Docker Commands]
   
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
@@ -41,4 +42,14 @@ tensorboard --logdir=./logs --port 6006 --host 0.0.0.0
 Then, go into a (local) browser and type 
 ```
 http://username@terminator1.ece.rice.edu:6006/
+```
+
+## Useful Docker Commands
+Commit contents in container de020b9b1da7 to the docker image tannguyen1989/ld-drm:latest
+```
+docker commit de020b9b1da7 tannguyen1989/ld-drm:latest
+```
+Push the docker image tannguyen1989/ld-drm:latest to docker hub
+```
+docker push tannguyen1989/ld-drm:latest
 ```
