@@ -25,14 +25,7 @@ Copy the link and paste it into your local internet browser
 ## Using standalone Tensorboard inside the Docker
 Add the `-p 0.0.0.0:6006:6006` parameter to the `nvidia-docker run` command. For example, 
 ```
-alias startdocker='nvidia-docker run -p 0.0.0.0:6006:6006 --rm -i -t \
---name Container \
---hostname inDocker \
--v /home/user123/:/root/ \
--v /mnt/project5/dataFolder/:/data/ \
-image/stuff:latest \
-/bin/bash'
-export PATH="/mnt/project5/dataFolder:$PATH"
+nvidia-docker run -p 0.0.0.0:6006:6006 --rm -ti --name tanmxnet4 --hostname insideDocker -v /home/tan/:/root/ -v /mnt/project2/tanData/:/tanData/ tannguyen1989/ld-drm:latest /bin/bash
 ```
 
 Once that is done, make a directory named `logs` and run 
@@ -52,4 +45,16 @@ docker commit de020b9b1da7 tannguyen1989/ld-drm:latest
 Push the docker image tannguyen1989/ld-drm:latest to docker hub
 ```
 docker push tannguyen1989/ld-drm:latest
+```
+Kill a docker container tanmxnet
+```
+docker kill tanmxnet
+```
+List all docker containers
+```
+docker ps
+```
+Attach to a docker container
+```
+docker attach tanmxnet
 ```
