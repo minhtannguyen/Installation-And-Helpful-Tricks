@@ -56,5 +56,17 @@ docker ps
 ```
 Attach to a docker container
 ```
-docker attach tanmxnet
+docker exec -it tanmxnet /bin/bash
+```
+
+
+## Useful Commands to Monitor the Server
+```
+top
+```
+```
+w
+```
+```
+last
 ```
