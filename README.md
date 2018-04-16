@@ -5,7 +5,8 @@ Any suggestions and pull requests are welcome.
 # Bookmarks
   * [Using Jupyter Notebook inside the Docker](#using-jupyter-notebook-inside-the-docker)
   * [Using Standalone Tensorboard inside the Docker](#using-standalone-tensorboard-inside-the-docker)
-  * [Useful Docker Commands]
+  * [Useful Docker Commands](#useful-docker-commands)
+  * [Other Useful Tricks for Working with Remote Servers][#other-useful-tricks-for-working-with-remote-servers]
   
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
@@ -59,7 +60,6 @@ Attach to a docker container
 docker exec -it tanmxnet /bin/bash
 ```
 
-
 ## Useful Commands to Monitor the Server
 ```
 top
@@ -69,4 +69,15 @@ w
 ```
 ```
 last
+```
+
+## Other Useful Tricks for Working with Remote Servers
+Kee the connection between the terminal and the server alive. In ~/.ssh/config, add the following:
+```
+Host *
+ServerAliveInterval 240
+```
+Then do
+```
+chmod 600 ~/.ssh/config
 ```
