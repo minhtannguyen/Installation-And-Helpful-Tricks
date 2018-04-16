@@ -72,7 +72,7 @@ last
 ```
 
 ## Other Useful Tricks for Working with Remote Servers
-Keep the connection between the terminal and the server alive. 
+Keep the connection between the terminal and the server alive 
 * In ~/.ssh/config, add the following:
 ```
 Host *
