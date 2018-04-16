@@ -6,6 +6,7 @@ Any suggestions and pull requests are welcome.
   * [Using Jupyter Notebook inside the Docker](#using-jupyter-notebook-inside-the-docker)
   * [Using Standalone Tensorboard inside the Docker](#using-standalone-tensorboard-inside-the-docker)
   * [Useful Docker Commands](#useful-docker-commands)
+  * [Useful Commands to Monitor the Server](#useful-commands-to-monitor-the-server)
   * [Other Useful Tricks for Working with Remote Servers][#other-useful-tricks-for-working-with-remote-servers]
   
 ## Using Jupyter Notebook inside the Docker
