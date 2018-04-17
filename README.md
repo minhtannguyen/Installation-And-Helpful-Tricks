@@ -71,14 +71,21 @@ docker exec -it tanmxnet /bin/bash
 ```
 
 ## Useful Commands to Monitor the Server
+Find RAM, Swap memory, CPU usage
 ```
-top
+top OR htop
 ```
+Users logged in
 ```
 w
 ```
+Login History
 ```
 last
+```
+Monitor GPU usage every 2 seconds, default is 2 seconds
+```
+watch -n 2 nvidia-smi
 ```
 
 ## Other Useful Tricks for Working with Remote Servers
