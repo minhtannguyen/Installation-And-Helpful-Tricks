@@ -32,7 +32,9 @@ You can find instruction to install JupyterLab here: https://github.com/jupyterl
 ```
 pip install jupyterlab
 ```
-
+If you are interested in using Jupyter Notebook and Jupyter Lab, the following tutorials will be useful.
+* Jupyter Notebook tutorial: https://www.youtube.com/watch?v=k7WXVWej-NY
+* Jupyter Lab tutorial: https://www.youtube.com/watch?v=w7jq4XgwLJQ
 ## Using standalone Tensorboard inside the Docker
 Add the `-p 0.0.0.0:6006:6006` parameter to the `nvidia-docker run` command. For example, 
 ```
