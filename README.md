@@ -23,7 +23,16 @@ Inside the docker container, launch jupyter notebook
 jupyter notebook --port 8888 --ip 0.0.0.0 --allow-root
 ```
 Copy the link and paste it into your local internet browser
-  
+
+If you would like to use JupyterLab instead of the notebook, use the following command to launch the lab
+```
+jupyter lab --port 8888 --ip 0.0.0.0 --allow-root
+```
+You can find instruction to install JupyterLab here: https://github.com/jupyterlab/jupyterlab. The easiest way to install JupyterLab is to use pip.
+```
+pip install jupyterlab
+```
+
 ## Using standalone Tensorboard inside the Docker
 Add the `-p 0.0.0.0:6006:6006` parameter to the `nvidia-docker run` command. For example, 
 ```
