@@ -7,6 +7,7 @@ Any suggestions and pull requests are welcome.
   * [Using Standalone Tensorboard inside the Docker](#using-standalone-tensorboard-inside-the-docker)
   * [Useful Docker Commands](#useful-docker-commands)
   * [Useful Commands to Monitor the Server](#useful-commands-to-monitor-the-server)
+  * [Recover Deleted Files on the Server](#recover-deleted-files-on-the-server)
   * [Other Useful Tricks for Working with Remote Servers][#other-useful-tricks-for-working-with-remote-servers]
   
 ## Using Jupyter Notebook inside the Docker
@@ -89,6 +90,13 @@ Monitor GPU usage every 2 seconds, default is 2 seconds
 ```
 watch -n 2 nvidia-smi
 ```
+
+## Recover Deleted Files on the Server
+Install testdisk
+```
+sudo apt install testdisk
+```
+To recover files run testdisk /dev/sdX where sdX is the disk's name (type df to see all the disks). Select your partition table type (table type is None for the terminator1). After this, select [ Advanced ] Filesystem Utils , then choose your partition. Now you can browse and select deleted files and copy them to another location in your filesystem by following the instructions given by testdisk at the bottom of your window.
 
 ## Other Useful Tricks for Working with Remote Servers
 Keep the connection between the terminal and the server alive 
