@@ -9,6 +9,7 @@ Any suggestions and pull requests are welcome.
   * [Useful Commands to Monitor the Server](#useful-commands-to-monitor-the-server)
   * [Recover Deleted Files on the Server](#recover-deleted-files-on-the-server)
   * [Other Useful Tricks for Working with Remote Servers][#other-useful-tricks-for-working-with-remote-servers]
+  * [Tricks to Submit on arXiv]
   
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
@@ -109,3 +110,7 @@ ServerAliveInterval 240
 ```
 chmod 600 ~/.ssh/config
 ```
+
+## Tricks to Submit on arXiv
+use \cite{} and do not use package natbib
+
