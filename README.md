@@ -7,6 +7,7 @@ Any suggestions and pull requests are welcome.
   * [Using Standalone Tensorboard inside the Docker](#using-standalone-tensorboard-inside-the-docker)
   * [Useful Docker Commands](#useful-docker-commands)
   * [Useful Commands to Monitor the Server](#useful-commands-to-monitor-the-server)
+  * [Tricks to Work with Screen](#tricks-to-work-with-screen)
   * [Recover Deleted Files on the Server](#recover-deleted-files-on-the-server)
   * [Other Useful Tricks for Working with Remote Servers][#other-useful-tricks-for-working-with-remote-servers]
   * [Tricks to Submit on arXiv]
@@ -92,6 +93,28 @@ Monitor GPU usage every 2 seconds, default is 2 seconds
 watch -n 2 nvidia-smi
 ```
 
+## Tricks to Work with Screen
+While the screen is running, if we would like to start logging the output from that screen, do the following:
+```
+Ctrl + a:logfile  <name-of-log-file>
+Ctrl + a Shift + h
+```
+If we want to copy the current output of a screen to a file, do the following:
+```
+Ctrl + a h
+```
+or
+```
+Ctrl + a:hardcopy -h <filename>
+```
+If we would like to copy the whole rollback buffer, then do the following:
+```
+Ctrl + a:writebuf <filename>
+```
+We can also log the screen from its start by doing the following:
+```
+screen -S <screenname> -L -Logfile <log_filename>
+```
 ## Recover Deleted Files on the Server
 Install testdisk
 ```
