@@ -75,6 +75,12 @@ Attach to a docker container
 docker exec -it tanmxnet /bin/bash
 ```
 
+## Useful Commands to Transferring Files
+```
+scp -r /Users/Owl/Downloads/Dockerfile.rtf tan@terminator1.ece.rice.edu:/home/tan/dockerfiles
+Dockerfile.rtf
+```
+
 ## Useful Commands to Monitor the Server
 Find RAM, Swap memory, CPU usage
 ```
