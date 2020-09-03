@@ -6,6 +6,7 @@ Any suggestions and pull requests are welcome.
   * [Using Jupyter Notebook inside the Docker](#using-jupyter-notebook-inside-the-docker)
   * [Using Standalone Tensorboard inside the Docker](#using-standalone-tensorboard-inside-the-docker)
   * [Useful Docker Commands](#useful-docker-commands)
+  * [Useful Commands to Transferring Files](#useful-commands-to-transferring-files)
   * [Useful Commands to Monitor the Server](#useful-commands-to-monitor-the-server)
   * [Tricks to Work with Screen](#tricks-to-work-with-screen)
   * [Recover Deleted Files on the Server](#recover-deleted-files-on-the-server)
