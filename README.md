@@ -20,7 +20,7 @@ ssh -L 127.0.0.1:8888:127.0.0.1:8888 -X tan@terminator1.ece.rice.edu
 ```
 On the cluster, create a docker container:
 ```
-nvidia-docker run -p 127.0.0.1:8888:8888 --rm -ti --name tanpytorch --hostname insideDocker -v /home/tan/:/root/ -v /mnt/project2/tanData/:/tanData/ tannguyen1989/efficientcnn:latest /bin/bash
+nvidia-docker run -p 0.0.0.0:8888:8888 --rm -ti --name tanpytorch --hostname insideDocker -v /home/tan/:/root/ -v /mnt/project2/tanData/:/tanData/ tannguyen1989/efficientcnn:latest /bin/bash
 ```
 Inside the docker container, launch jupyter notebook
 ```
