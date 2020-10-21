@@ -16,21 +16,21 @@ Any suggestions and pull requests are welcome.
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
 ```
-ssh -L 127.0.0.1:8888:127.0.0.1:8888 -X tan@terminator1.ece.rice.edu
+ssh -L 127.0.0.1:8887:127.0.0.1:8887 -X tan@terminator1.ece.rice.edu
 ```
 On the cluster, create a docker container:
 ```
-nvidia-docker run -p 0.0.0.0:8888:8888 --rm -ti --name tanpytorch --hostname insideDocker -v /home/tan/:/root/ -v /mnt/project2/tanData/:/tanData/ tannguyen1989/efficientcnn:latest /bin/bash
+nvidia-docker run -p 0.0.0.0:8887:8887 --rm -ti --name tanpytorch --hostname insideDocker -v /home/tan/:/root/ -v /mnt/project2/tanData/:/tanData/ tannguyen1989/efficientcnn:latest /bin/bash
 ```
 Inside the docker container, launch jupyter notebook
 ```
-jupyter notebook --port 8888 --ip 0.0.0.0 --allow-root
+jupyter notebook --port 8887 --ip 0.0.0.0 --allow-root
 ```
 Copy the link and paste it into your local internet browser
 
 If you would like to use JupyterLab instead of the notebook, use the following command to launch the lab
 ```
-jupyter lab --port 8888 --ip 0.0.0.0 --allow-root
+jupyter lab --port 8887 --ip 0.0.0.0 --allow-root
 ```
 You can find instruction to install JupyterLab here: https://github.com/jupyterlab/jupyterlab. The easiest way to install JupyterLab is to use pip.
 ```
