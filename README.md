@@ -13,7 +13,7 @@ Any suggestions and pull requests are welcome.
   * [Other Useful Tricks for Working with Remote Servers][#other-useful-tricks-for-working-with-remote-servers]
   * [Tricks to Submit on arXiv]
   * [Download and Upload from Google Drive when Using Terminal on a Remote Server]
-  * [Kill background processs]
+  * [Kill background processes]
   
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
@@ -153,7 +153,7 @@ use \cite{} and do not use package natbib
 https://www.howtogeek.com/451262/how-to-use-rclone-to-back-up-to-google-drive-on-linux/
 ```
 
-## Kill background processs
+## Kill background processes
 ```
 ps -eaf
 sudo kill -9 PID
