@@ -10,10 +10,10 @@ Any suggestions and pull requests are welcome.
   * [Useful Commands to Monitor the Server](#useful-commands-to-monitor-the-server)
   * [Tricks to Work with Screen](#tricks-to-work-with-screen)
   * [Recover Deleted Files on the Server](#recover-deleted-files-on-the-server)
-  * [Other Useful Tricks for Working with Remote Servers][#other-useful-tricks-for-working-with-remote-servers]
-  * [Tricks to Submit on arXiv][#tricks-to-submit-on-arxiv]
-  * [Download and Upload from Google Drive when Using Terminal on a Remote Server][#download-and-upload-from-google-drive-when-using-terminal-on-a-remote-server]
-  * [Kill background processes][#kill-background-processes]
+  * [Other Useful Tricks for Working with Remote Servers](#other-useful-tricks-for-working-with-remote-servers)
+  * [Tricks to Submit on arXiv](#tricks-to-submit-on-arxiv)
+  * [Download and Upload from Google Drive when Using Terminal on a Remote Server](#download-and-upload-from-google-drive-when-using-terminal-on-a-remote-server)
+  * [Kill background processes](#kill-background-processes)
   
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
