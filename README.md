@@ -14,7 +14,7 @@ Any suggestions and pull requests are welcome.
   * [Tricks to Submit on arXiv](#tricks-to-submit-on-arxiv)
   * [Download and Upload from Google Drive when Using Terminal on a Remote Server](#download-and-upload-from-google-drive-when-using-terminal-on-a-remote-server)
   * [Kill background processes](#kill-background-processes)
-  * [Log all data from Tensorboard](##log-all-data-from-tensorboard)
+  * [Log all data from Tensorboard](#log-all-data-from-tensorboard)
   
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
@@ -164,5 +164,6 @@ More at: https://www.baeldung.com/linux/kill-background-process
 ## Log all data from Tensorboard
 ```
 https://gemst1.github.io/1-Tensorboard-log-data
+The application file can be found here: /opt/conda/lib/python3.6/site-packages/tensorboard/backend
 ```
 
