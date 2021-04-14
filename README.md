@@ -15,6 +15,7 @@ Any suggestions and pull requests are welcome.
   * [Download and Upload from Google Drive when Using Terminal on a Remote Server](#download-and-upload-from-google-drive-when-using-terminal-on-a-remote-server)
   * [Kill background processes](#kill-background-processes)
   * [Log all data from Tensorboard](#log-all-data-from-tensorboard)
+  * [Rsync files of a certain extension recursively from a folder](#rsync-files-of-a-certain-extension-recursively-from-a-folder)
   
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
@@ -165,5 +166,10 @@ More at: https://www.baeldung.com/linux/kill-background-process
 ```
 https://gemst1.github.io/1-Tensorboard-log-data
 The application file can be found here: /opt/conda/lib/python3.6/site-packages/tensorboard/backend
+```
+
+## Rsync files of a certain extension recursively from a folder
+```
+rsync -rav -e ssh --include '*/' --include='*.rigveda' --exclude='*' tanmnguyen@medusa.sci.utah.edu:/home/collab/tanmnguyen/results/momentum_transformer/nonauto /Users/Owl/Documents/medusa-files/nonauto
 ```
 
