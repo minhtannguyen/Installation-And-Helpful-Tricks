@@ -16,6 +16,7 @@ Any suggestions and pull requests are welcome.
   * [Kill background processes](#kill-background-processes)
   * [Log all data from Tensorboard](#log-all-data-from-tensorboard)
   * [Rsync files of a certain extension recursively from a folder](#rsync-files-of-a-certain-extension-recursively-from-a-folder)
+  * [Handle Your local changes to the following files would be overwritten by merge](#handle-your-local-changes-to-the-following-files-would-be-overwritten-by-merge)
   
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
@@ -171,5 +172,11 @@ The application file can be found here: /opt/conda/lib/python3.6/site-packages/t
 ## Rsync files of a certain extension recursively from a folder
 ```
 rsync -rav -e ssh --include '*/' --include='*.rigveda' --exclude='*' tanmnguyen@medusa.sci.utah.edu:/home/collab/tanmnguyen/results/momentum_transformer/nonauto /Users/Owl/Documents/medusa-files/nonauto
+```
+
+## Handle Your local changes to the following files would be overwritten by merge
+```
+git stash push --include-untracked
+git stash drop (If I don't need them anymore)
 ```
 
