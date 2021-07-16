@@ -49,9 +49,9 @@ If you are interested in using Jupyter Notebook and Jupyter Lab, the following t
 * Jupyter Lab tutorial: https://www.youtube.com/watch?v=w7jq4XgwLJQ
 
 On a general cluster, follow the instruction below
-```
+
 https://towardsdatascience.com/using-jupyter-notebook-running-on-a-remote-docker-container-via-ssh-ea2c3ebb9055
-```
+
 For example
 ```
 ssh -L 6889:localhost:6889 -L 6888:localhost:6888 -X tanmnguyen89@newton.sci.utah.edu
