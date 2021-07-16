@@ -17,6 +17,7 @@ Any suggestions and pull requests are welcome.
   * [Log all data from Tensorboard](#log-all-data-from-tensorboard)
   * [Rsync files of a certain extension recursively from a folder](#rsync-files-of-a-certain-extension-recursively-from-a-folder)
   * [Handle Your local changes to the following files would be overwritten by merge](#handle-your-local-changes-to-the-following-files-would-be-overwritten-by-merge)
+  * [Screen with more usual bash](#screen-with-more-usual-bash)
   
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
@@ -46,6 +47,23 @@ pip install jupyterlab
 If you are interested in using Jupyter Notebook and Jupyter Lab, the following tutorials will be useful.
 * Jupyter Notebook tutorial: https://www.youtube.com/watch?v=k7WXVWej-NY
 * Jupyter Lab tutorial: https://www.youtube.com/watch?v=w7jq4XgwLJQ
+
+On a general cluster, follow the instruction below
+```
+https://towardsdatascience.com/using-jupyter-notebook-running-on-a-remote-docker-container-via-ssh-ea2c3ebb9055
+```
+For example
+```
+ssh -L 6889:localhost:6889 -L 6888:localhost:6888 -X tanmnguyen89@newton.sci.utah.edu
+nvidia-docker run -p 6889:6889 -p 6888:6888 --rm -ti --name tandocker-graph --ipc=host --hostname insideDocker -v /home/tanmnguyen89/:/root/ -v /mnt/tanData:/tanData/ tannguyen1989/pytorch_tan:base-0.2 /bin/bash
+jupyter lab --ip 0.0.0.0 --port 6889 --allow-root
+```
+Then access the jupyter lab at 
+```
+localhost:6889
+```
+After that, enter the token and set up the password.
+
 ## Using standalone Tensorboard inside the Docker
 Add the `-p 0.0.0.0:6006:6006` parameter to the `nvidia-docker run` command. For example, 
 ```
@@ -178,5 +196,10 @@ rsync -rav -e ssh --include '*/' --include='*.rigveda' --exclude='*' tanmnguyen@
 ```
 git stash push --include-untracked
 git stash drop (If I don't need them anymore)
+```
+
+## Screen with more usual bash
+```
+https://serverfault.com/questions/126009/how-do-i-ask-screen-to-behave-like-a-standard-bash-shell
 ```
 
