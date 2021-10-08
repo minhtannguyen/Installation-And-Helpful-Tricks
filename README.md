@@ -18,6 +18,7 @@ Any suggestions and pull requests are welcome.
   * [Rsync files of a certain extension recursively from a folder](#rsync-files-of-a-certain-extension-recursively-from-a-folder)
   * [Handle Your local changes to the following files would be overwritten by merge](#handle-your-local-changes-to-the-following-files-would-be-overwritten-by-merge)
   * [Screen with more usual bash](#screen-with-more-usual-bash)
+  * [Preprocess ImageNet](#preprocess-imagenet)
   
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
@@ -201,5 +202,10 @@ git stash drop (If I don't need them anymore)
 ## Screen with more usual bash
 ```
 https://serverfault.com/questions/126009/how-do-i-ask-screen-to-behave-like-a-standard-bash-shell
+```
+
+## Preprocess ImageNet
+```
+https://gist.github.com/BIGBALLON/8a71d225eff18d88e469e6ea9b39cef4
 ```
 
