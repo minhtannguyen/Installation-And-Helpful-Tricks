@@ -19,6 +19,9 @@ Any suggestions and pull requests are welcome.
   * [Handle Your local changes to the following files would be overwritten by merge](#handle-your-local-changes-to-the-following-files-would-be-overwritten-by-merge)
   * [Screen with more usual bash](#screen-with-more-usual-bash)
   * [Preprocess ImageNet](#preprocess-imagenet)
+  * [Create SSH Keys for skipping password on Github](#create-ssh-keys-for-skipping-password-on-github)
+  * [Build, Tag, and Push Docker](#build-tag-and-push-docker)
+  * [Git Add Particular Files](#git-add-particular-files)
   
 ## Using Jupyter Notebook inside the Docker
 Log into the cluster from your local computer:
@@ -207,5 +210,24 @@ https://serverfault.com/questions/126009/how-do-i-ask-screen-to-behave-like-a-st
 ## Preprocess ImageNet
 ```
 https://gist.github.com/BIGBALLON/8a71d225eff18d88e469e6ea9b39cef4
+```
+
+## Create SSH Keys for skipping password on Github
+```
+ssh-keygen -t rsa
+```
+
+## Build, Tag, and Push Docker
+```
+docker build -t pytorch_tan:transformer-0.2 .
+docker tag pytorch_tan:transformer-0.2 tannguyen1989/pytorch_tan:transformer-0.2
+docker push tannguyen1989/pytorch_tan:transformer-0.2
+```
+
+## Git Add Particular Files
+```
+git add ./\*.py
+git commit -m "add code"
+git push
 ```
 
